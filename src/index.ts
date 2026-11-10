@@ -1,4 +1,4 @@
-let modulePromise: Promise<typeof import("./generated/stub-translator.teavm.js")> | null = null;
+let modulePromise: Promise<typeof import("./generated/translator-stub.teavm.js")> | null = null;
 
 /**
  * Loads the TeaVM-compiled reference translator module, once.
@@ -8,9 +8,9 @@ let modulePromise: Promise<typeof import("./generated/stub-translator.teavm.js")
  *
  * @returns the module, whose exports are the translator's own string functions
  */
-export function loadStubTranslator(): Promise<typeof import("./generated/stub-translator.teavm.js")> {
+export function loadStubTranslator(): Promise<typeof import("./generated/translator-stub.teavm.js")> {
   if (!modulePromise) {
-    modulePromise = import("./generated/stub-translator.teavm.js");
+    modulePromise = import("./generated/translator-stub.teavm.js");
   }
   return modulePromise;
 }

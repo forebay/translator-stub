@@ -79,10 +79,10 @@ configure(subprojects.findAll { PUBLISHED_MODULES.containsKey(it.path) }) {
 
     publishGithub {
         // These modules sit inside this repo with no .git of their own, so the default git-remote
-        // lookup fails; owner/repo also drive the uploaded asset name (stub-translator-<classifier>.jar).
+        // lookup fails; owner/repo also drive the uploaded asset name (translator-stub-<classifier>.jar).
         owner = "forebay"
-        repo = "stub-translator"
-        releaseName = "stub-translator ${project.findProperty('artifact_version') ?: project.version}"
+        repo = "translator-stub"
+        releaseName = "translator-stub ${project.findProperty('artifact_version') ?: project.version}"
         artifacts {
             artifact {
                 classifier = PUBLISHED_MODULES[project.path]

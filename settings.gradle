@@ -2,7 +2,7 @@ plugins {
     id "org.gradle.toolchains.foojay-resolver-convention" version "0.8.0"
 }
 
-rootProject.name = "stub-translator-java"
+rootProject.name = "translator-stub"
 
 // :ir is basekit's neutral IR module, resolved by github-gradle from basekit's release assets.
 // :annotations, :processor and :contract come from api the same way: :ir exports api's seam types

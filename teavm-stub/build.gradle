@@ -32,7 +32,7 @@ java {
 
 tasks.named("compileJava") {
     options.release = 17
-    options.compilerArgs << "-Atsemit.name=stub-translator.teavm"
+    options.compilerArgs << "-Atsemit.name=translator-stub.teavm"
 }
 
 teavm.js {
@@ -40,5 +40,5 @@ teavm.js {
     moduleType = JSModuleType.ES2015
     obfuscated = false
     optimization = OptimizationLevel.NONE
-    targetFileName = "stub-translator.js"
+    targetFileName = "translator-stub.js"
 }

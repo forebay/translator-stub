@@ -53,7 +53,7 @@ jobs:
       tag: ${{ inputs.tag }}
       patch_ceiling: 20
       require_clean_readme: false
-      unscoped_name: 'stub-translator'
+      unscoped_name: 'translator-stub'
       scope: 'intisy-ai'
       scoped_only: true
       pin_file_deps: true

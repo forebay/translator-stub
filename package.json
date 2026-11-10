@@ -1,5 +1,5 @@
 {
-  "name": "stub-translator",
+  "name": "translator-stub",
   "version": "1.1.0",
   "description": "The reference vendor translator for the forebay ecosystem: the smallest thing that satisfies the Translator SPI, kept green against every gate.",
   "main": "dist/index.js",
@@ -9,7 +9,7 @@
   "author": "intisy",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/forebay/stub-translator.git"
+    "url": "git+https://github.com/forebay/translator-stub.git"
   },
   "keywords": [
     "forebay",
@@ -29,7 +29,7 @@
   },
   "scripts": {
     "emit:teavm": "node node_modules/@intisy/bayonet/scripts/emit-dts.mjs --java-dir . --module :teavm-stub --out src/generated",
-    "build:teavm": "node node_modules/@intisy/bayonet/scripts/teavm-build.mjs --java-dir . --module :teavm-stub --out src/generated/stub-translator.teavm.js",
+    "build:teavm": "node node_modules/@intisy/bayonet/scripts/teavm-build.mjs --java-dir . --module :teavm-stub --out src/generated/translator-stub.teavm.js",
     "build": "npm run emit:teavm && npm run build:teavm && tsc && node build.mjs",
     "test": "npm run build && vitest run",
     "prepublishOnly": "npm run build",

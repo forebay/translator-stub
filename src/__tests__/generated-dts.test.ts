@@ -17,7 +17,7 @@ it("keeps the committed teavm declarations identical to what the java emits", ()
   ], { cwd: repo, stdio: "inherit" });
 
   const emitted = readdirSync(scratch).sort();
-  expect(emitted).toEqual(["stub-translator.teavm.d.ts"]);
+  expect(emitted).toEqual(["translator-stub.teavm.d.ts"]);
   for (const name of emitted) {
     expect(readFileSync(join(scratch, name), "utf8")).toBe(readFileSync(join(repo, "src", "generated", name), "utf8"));
   }

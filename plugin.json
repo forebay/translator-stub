@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@intisy/bayonet/schema/plugin.schema.json",
-  "id": "stub-translator",
+  "id": "translator-stub",
   "api": 1,
   "displayName": "Stub translator",
   "publish": {
