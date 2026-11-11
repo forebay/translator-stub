@@ -1,0 +1,17 @@
+{
+  "format": 1,
+  "importName": "translator-stub",
+  "description": "The smallest working translator, kept as a reference and starting point.",
+  "topics": [
+    "ai",
+    "ai-proxy",
+    "example",
+    "forebay",
+    "java",
+    "llm",
+    "template",
+    "translator",
+    "typescript",
+    "vendor-translator"
+  ]
+}
